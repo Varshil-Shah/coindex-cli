@@ -22,11 +22,26 @@ const key = {
   },
 
   show() {
-    console.log('Hell from show!');
+    try {
+      const keyManager = new KeyManager();
+      const key = keyManager.getKey();
+
+      console.log('Current API key:', key.yellow);
+      return key;
+    } catch (error) {
+      console.log(error.message.red);
+    }
   },
 
   remove() {
-    console.log('Hell from remove!');
+    try {
+      const keyManager = new KeyManager();
+      const key = keyManager.deleteKey();
+
+      console.log('API key has been deleted successfully!'.blue);
+    } catch (error) {
+      console.log(error.message.red);
+    }
   },
 };
 
