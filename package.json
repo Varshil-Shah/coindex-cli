@@ -1,0 +1,27 @@
+{
+  "name": "coindex",
+  "version": "1.0.0",
+  "description": "CLI tool to get crypt-currency price",
+  "main": "index.js",
+  "bin": "./bin/coindex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Varshil-Shah/coindex-cli.git"
+  },
+  "author": "Varshil Shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Varshil-Shah/coindex-cli/issues"
+  },
+  "homepage": "https://github.com/Varshil-Shah/coindex-cli#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0",
+    "commander": "^9.2.0",
+    "configstore": "^6.0.0",
+    "inquirer": "^8.2.4"
+  }
+}
